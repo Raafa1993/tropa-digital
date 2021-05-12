@@ -1,9 +1,16 @@
 import { GlobalStyle } from "./styles/global";
 
+import Layout from './components/Layout';
+import { BrowserRouter } from 'react-router-dom';
+import Routes from '../src/routes'
+
 function App() {
   return (
     <>
-      <h1>Ola mundo</h1>
+      <Layout />
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
       <GlobalStyle />
     </>
   );

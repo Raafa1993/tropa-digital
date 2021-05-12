@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
   --green: #2EAFB2;
   --background: #F3F3F3;
   --white: #FFFFFF;
-  --text-tittle: #888888;
+  --text-title: #888888;
 }
 
 * {
@@ -41,6 +41,10 @@ body, input, textarea, button {
 
 h1, h2, h3, h4, h5, h6, strong {
   font-weight: 600;
+}
+
+ul, li, a {
+  list-style: none;
 }
 
 button {
