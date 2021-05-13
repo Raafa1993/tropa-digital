@@ -86,11 +86,45 @@ export const ContentForm = styled.div`
       color: #000;
     }
 
-    & + input {
-      margin-top: 13px;
-    }
   }
 
+  .password {
+    display: flex;
+    align-items: center;
+
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--subtitle);
+
+    width: 100%;
+    height: 44px;
+    border-radius: .5rem;
+    border-radius: .5rem;
+    border: 1px solid #ECECEC;
+    background: var(--text);
+
+    margin-top: 13px;
+  }
+
+  .password:focus-within {
+    border: 2px  #000 solid;
+  }
+
+  input[type="password"],
+  input[type="text"] {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--subtitle);
+
+    width: 100%;
+    height: 44px;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    background: var(--text);
+  }
+  
   button {
     background: var(--green);
     padding: 0 16px;
@@ -101,7 +135,6 @@ export const ContentForm = styled.div`
 
     width: 44%;
     height: 40px;
-
 
     font-size: .8rem;
     font-weight: bold;
@@ -114,6 +147,13 @@ export const ContentForm = styled.div`
     }
   }
 `;
+
+export const Icon = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 13px;
+`
 
 export const ContentRight = styled.div`
   display: flex;
