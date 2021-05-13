@@ -9,8 +9,6 @@ align-items: center;
 width: 240px;
 height: 100vh;
 
-position: fixed;
-
 background-color: var(--white);
 padding: 20px;
 
